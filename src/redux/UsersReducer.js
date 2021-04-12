@@ -7,7 +7,7 @@ let initialState = {
 };
 
 const UsersReducer = (state = initialState, action) => {
-
+ // проверка профиля на Follow статус
 	switch (action.type) {
 		case FOLLOW:
 			return {
