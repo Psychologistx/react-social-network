@@ -19,7 +19,7 @@ const MyPosts = (props) => {
 
 	return ( 
 		<div className={s.postsBlock}>
-			<h3>My posts</h3>
+			<h1>My posts</h1>
 			<div>
 				<div>
 					<textarea placeholder="Enter your message here..." onChange={onPostChange} ref={newPostElement} value={props.newPostText} />

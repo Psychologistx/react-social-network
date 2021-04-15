@@ -17,7 +17,7 @@ class Users extends React.Component {
 				this.props.users.map(u => <div key={u.id}>
 					<span>
 						<div>
-							<img src={u.photos.small !== null ? u.photos.small : userPhoto} className={s.userPhoto} alt="" />
+							<img src={u.photos.small !== null ? u.photos.small : userPhoto} className={s.userPhoto} alt="user" />
 						</div>
 						<div>
 							{u.followed ? <button onClick={() => { this.props.unfollow(u.id) }}>Unfollow</button> : <button onClick={() => { this.props.follow(u.id) }}>Follow</button>}
