@@ -17,7 +17,6 @@ let ProfileInfo = (props) => {
 			</div>
 			<div className={s.descriptionBlock}>
 				<img className={s.avatar} src={props.profile.photos.large} alt="" />
-				{/* <img className={s.avatar} src="https://cdn.jpegmini.com/user/images/slider_puffin_before_mobile.jpg" alt="profile" /> */}
 				<section className={s.profileInformation}>
 					<div><b>Name:</b> {props.profile.fullName || "Неизвестно"}</div>
 					<div><b>About me:</b> {props.profile.aboutMe || "Неизвестно"}</div>
