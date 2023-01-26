@@ -1,8 +1,9 @@
 import React from 'react';
 import Preloader from '../../common/Preloader';
 import s from './ProfileInfo.module.css';
+import ProfileStatus from "./ProfileStatus"
 
-let ProfileInfo = (props) => {
+const ProfileInfo = (props) => {
 
 	const jobStatus = props.profile?.lookingForAJob ? "Ищу работу" : "Работу не ищу";
 
@@ -12,11 +13,12 @@ let ProfileInfo = (props) => {
 	console.log(props.profile)
 	return (
 		<div>
-			<div>
+			{/* <div>
 				<img src="https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg" alt="" />
-			</div>
+			</div> */}
 			<div className={s.descriptionBlock}>
 				<img className={s.avatar} src={props.profile.photos.large} alt="" />
+				<ProfileStatus status={"Hello, my friends!"}/>
 				<section className={s.profileInformation}>
 					<div><b>Name:</b> {props.profile.fullName || "Неизвестно"}</div>
 					<div><b>About me:</b> {props.profile.aboutMe || "Неизвестно"}</div>
